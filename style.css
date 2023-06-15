@@ -56,6 +56,23 @@ form{
     color: var(--color-base-gray-400);
 }
 
-.step-progress strong{
+.step-progress strong::before{
+    font-family: 'Titillium Web';
+    content: "1";
+    font-size: 1.4rem;
 
+    background-color: var(--color-base-gray-100);
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--color-base-gray-200);
+
+}
+
+.step-progress .active::before{
+    background-color: var(--color-produto-purple-mid);
+    color:var(--color-base-white);
 }
